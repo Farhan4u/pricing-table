@@ -1,0 +1,74 @@
+@import 'variable';
+@function color($color-name) {
+    @return map-get($c, $color-name)
+}
+
+
+@mixin mq($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+
+#pricing {
+    background-color: map-get($c, wc);
+    // background-image: linear-gradient(map-get($c, gc5), map-get($c, gc1));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .pricing-inner {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+
+        .pricing-box {
+            grid-column: span 4;
+            padding: 20px 0;
+            background-color: map-get($c, pc);
+            transition: all .25s ease-in-out;
+            
+
+            @include mq(768px) {
+                grid-column: span 12;
+            }
+
+            &:hover {
+                transform: translateY(-20px);
+                box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.178);
+            }
+
+            @import 'head';
+            @import 'body';
+
+            .order {
+
+                .order-btn {
+                    text-decoration: none;
+                    display: block;
+                    width: 100px;
+                    height: 45px;
+                    line-height: 45px;
+                    margin: 0 auto;
+                    font-family: $roboto;
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-align: center;
+                    background-color: map-get($c, sc);
+                    border: 1px solid map-get($c, sc);
+                    color: map-get($c, wc);
+                    transition: all .25s;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: lighten(map-get($c, sc), 0%);
+                    }
+                }
+            }      
+        }
+        .premium {
+            border: 1px solid limap-get($c, sc);
+        }
+    }
+    
+}

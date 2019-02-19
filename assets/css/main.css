@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#container {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  #container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+#pricing {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pricing .pricing-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+}
+
+#pricing .pricing-inner .pricing-box {
+  grid-column: span 4;
+  padding: 20px 0;
+  background-color: #eee;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  #pricing .pricing-inner .pricing-box {
+    grid-column: span 12;
+  }
+}
+
+#pricing .pricing-inner .pricing-box:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.178);
+}
+
+#pricing .pricing-inner .pricing-box .pricing-head {
+  padding: 20px;
+  height: 150px;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-head .package-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272536;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-head h2 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  color: #272536;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-head h2 .dollorSign {
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-head h2 .pricing-amount {
+  font-size: 65px;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-head h2 .super-script {
+  font-size: 25px;
+  position: absolute;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-head h2 .deuration {
+  font-size: 16px;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-body {
+  padding: 20px;
+}
+
+#pricing .pricing-inner .pricing-box .pricing-body ul li {
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  white-space: nowrap;
+  text-align: center;
+  max-height: 50px;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 15px;
+  color: black;
+}
+
+#pricing .pricing-inner .pricing-box .order .order-btn {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #272536;
+  border: 1px solid #272536;
+  color: #ffffff;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+#pricing .pricing-inner .pricing-box .order .order-btn:hover {
+  background-color: transparent;
+  color: #272536;
+}
+
+#pricing .pricing-inner .premium {
+  border: 1px solid limap-get((pc: #eee, sc: #272536, wc: #ffffff), sc);
+}
+/*# sourceMappingURL=main.css.map */

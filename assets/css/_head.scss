@@ -1,0 +1,42 @@
+.pricing-head {
+    padding: 20px;
+    height: 150px;
+
+    .package-name {
+        font-family: $roboto;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+        color: map-get($c, sc);
+    }
+
+    h2 {
+        font-family: $roboto;
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        color: map-get($c, sc);
+
+        .dollorSign {
+            font-size: 16px;
+            position: absolute;
+            top: 10px;
+            left: -10px;
+        }
+
+        .pricing-amount {
+            font-size: 65px;
+        }
+
+        .super-script {
+            font-size: 25px;
+            position: absolute;
+        }
+
+        .deuration {
+            font-size: 16px;
+        }
+
+    }
+}
