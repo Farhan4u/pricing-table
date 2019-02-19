@@ -27,6 +27,10 @@
             padding: 20px 0;
             background-color: map-get($c, pc);
             transition: all .25s ease-in-out;
+
+            .bold {
+                font-weight: 900;
+            }
             
 
             @include mq(768px) {
@@ -67,7 +71,61 @@
             }      
         }
         .premium {
-            border: 1px solid limap-get($c, sc);
+            z-index: 15;
+            background-color: map-get($c, sc);
+            // box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.31);
+
+            .pricing-head {
+
+                .package-name {
+                    color: map-get($c, wc);
+                }
+
+                h2 {
+                    color: map-get($c, wc);
+                }
+            }
+
+            .pricing-body {
+                padding: 20px;
+            
+                ul {
+            
+                    li {
+                        font-family: $roboto;
+                        list-style-type: none;
+                        white-space: nowrap;
+                        text-align: center;
+                        max-height: 50px;
+                        padding: 10px 0;
+                        color: map-get($c, wc);
+                    }
+                }
+            }
+            .order {
+
+                .order-btn {
+                    text-decoration: none;
+                    display: block;
+                    width: 100px;
+                    height: 45px;
+                    line-height: 45px;
+                    margin: 0 auto;
+                    font-family: $roboto;
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-align: center;
+                    background-color: map-get($c, wc);
+                    border: 1px solid map-get($c, wc);
+                    color: map-get($c, sc);
+                    transition: all .25s;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: lighten(map-get($c, sc), 100%);
+                    }
+                }
+            }
         }
     }
     

@@ -45,6 +45,10 @@
   transition: all .25s ease-in-out;
 }
 
+#pricing .pricing-inner .pricing-box .bold {
+  font-weight: 900;
+}
+
 @media only screen and (max-width: 768px) {
   #pricing .pricing-inner .pricing-box {
     grid-column: span 12;
@@ -69,7 +73,7 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
-  color: #272536;
+  color: #330f1e;
 }
 
 #pricing .pricing-inner .pricing-box .pricing-head h2 {
@@ -79,7 +83,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  color: #272536;
+  color: #330f1e;
 }
 
 #pricing .pricing-inner .pricing-box .pricing-head h2 .dollorSign {
@@ -129,8 +133,8 @@
   font-size: 15px;
   font-weight: 600;
   text-align: center;
-  background-color: #272536;
-  border: 1px solid #272536;
+  background-color: #330f1e;
+  border: 1px solid #330f1e;
   color: #ffffff;
   -webkit-transition: all .25s;
   transition: all .25s;
@@ -138,10 +142,56 @@
 
 #pricing .pricing-inner .pricing-box .order .order-btn:hover {
   background-color: transparent;
-  color: #272536;
+  color: #330f1e;
 }
 
 #pricing .pricing-inner .premium {
-  border: 1px solid limap-get((pc: #eee, sc: #272536, wc: #ffffff), sc);
+  z-index: 15;
+  background-color: #330f1e;
+}
+
+#pricing .pricing-inner .premium .pricing-head .package-name {
+  color: #ffffff;
+}
+
+#pricing .pricing-inner .premium .pricing-head h2 {
+  color: #ffffff;
+}
+
+#pricing .pricing-inner .premium .pricing-body {
+  padding: 20px;
+}
+
+#pricing .pricing-inner .premium .pricing-body ul li {
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  white-space: nowrap;
+  text-align: center;
+  max-height: 50px;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
+#pricing .pricing-inner .premium .order .order-btn {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #330f1e;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+#pricing .pricing-inner .premium .order .order-btn:hover {
+  background-color: transparent;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
